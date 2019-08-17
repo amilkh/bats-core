@@ -2,9 +2,9 @@
 
 ## Welcome!
 
-Thank you for considering contributing to the development of this project's 
+Thank you for considering contributing to the development of this project's
 development and/or documentation. Just a reminder: if you're new to this project
-or to OSS and want to find issues to work on, please check the following labels 
+or to OSS and want to find issues to work on, please check the following labels
 on issues:
 
 - [help wanted][helpwantedlabel]
@@ -17,7 +17,7 @@ on issues:
 
 To see all labels and their meanings, [check this wiki page][labelswiki].
 
-This guide borrows **heavily** from [@mbland's go-script-bash][gsb] (with some 
+This guide borrows **heavily** from [@mbland's go-script-bash][gsb] (with some
 sections directly quoted), which in turn was
 drafted with tips from [Wrangling Web Contributions: How to Build
 a CONTRIBUTING.md][moz] and with some inspiration from [the Atom project's
@@ -100,7 +100,7 @@ specifics, see the [CODE_OF_CONDUCT][] file.
 
 Please check the [README][] or existing [issues][repoissues] first.
 
-If you cannot find an answer to your question, please feel free to hop on our 
+If you cannot find an answer to your question, please feel free to hop on our
 [gitter][gitterurl] [![Gitter](https://badges.gitter.im/bats-core/bats-core.svg)](https://gitter.im/bats-core/bats-core?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge) or [via IRC (#bats on freenode)][ircurl].
 
 ### Reporting issues
@@ -120,7 +120,7 @@ observing. At a minimum, include:
 
 1. State the version of Bash you're using `bash --version`
 1. State your operating system and its version
-1. If you're installing through homebrew, run `brew doctor`, and attach the 
+1. If you're installing through homebrew, run `brew doctor`, and attach the
 output of `brew info bats-core`
 
 #### Bugs/usage issues
@@ -142,9 +142,9 @@ Also consider using:
 ### On existing issues
 
 1. DO NOT add a +1 comment: Use the reactions provided instead
-1. DO add information if you're facing a similar issue to someone else, but 
-within a different context (e.g. different steps needed to reproduce the issue 
-than previous stated, different version of Bash or BATS, different OS, etc.) 
+1. DO add information if you're facing a similar issue to someone else, but
+within a different context (e.g. different steps needed to reproduce the issue
+than previous stated, different version of Bash or BATS, different OS, etc.)
 You can read on how to do that here: [Information to include][#information-to-include]
 1. DO remember that you can use the *Subscribe* button on the right side of the
 page to receive notifications of further conversations or a resolution.
@@ -153,7 +153,7 @@ page to receive notifications of further conversations or a resolution.
 
 We love documentation and people who love documentation!
 
-If you love writing clear, accessible docs, please don't be shy about pull 
+If you love writing clear, accessible docs, please don't be shy about pull
 requests. Remember: docs are just as important as code.
 
 Also: _no typo is too small to fix!_ Really. Of course, batches of fixes are
@@ -169,7 +169,7 @@ README][env-setup].
 ## Workflow
 
 The basic workflow for submitting changes resembles that of the [GitHub Git
-Flow][github-flow] (a.k.a. GitHub Flow), except that you will be working with 
+Flow][github-flow] (a.k.a. GitHub Flow), except that you will be working with
 your own fork of the repository and issuing pull requests to the original.
 
 [github-flow]: https://guides.github.com/introduction/flow/
@@ -297,9 +297,9 @@ The following are intended to prevent too-compact code:
   the difference avoiding subshells makes.) Bash is quite powerful; see if you
   can do what you need in pure Bash first.
 - If you need to capture the output from a function, store the output using
-  `printf -v` instead if possible. `-v` specfies the name of the variable into
+  `printf -v` instead if possible. `-v` specifies the name of the variable into
   which to write the result; the caller can supply this name as a parameter.
-- If you must use command substituion, use `$()` instead of backticks, as it's
+- If you must use command substitution, use `$()` instead of backticks, as it's
   more robust, more searchable, and can be nested.
 
 [win-slow]: https://rufflewind.com/2014-08-23/windows-bash-slow
@@ -338,9 +338,9 @@ The following are intended to prevent too-compact code:
 
 ### Signal names
 
-Always use upper case signal names (e.g. `trap - INT EXIT`) to avoid locale 
-dependent errors. In some locales (for example Turkish, see 
-[Turkish dotless i](https://en.wikipedia.org/wiki/Dotted_and_dotless_I)) lower 
+Always use upper case signal names (e.g. `trap - INT EXIT`) to avoid locale
+dependent errors. In some locales (for example Turkish, see
+[Turkish dotless i](https://en.wikipedia.org/wiki/Dotted_and_dotless_I)) lower
 case signal names cause Bash to error. An example of the problem:
 
 ```bash
@@ -375,7 +375,7 @@ For the text of the license, see the [LICENSE][] file.
 
 ## Credits
 
-- This guide was heavily written by BATS-core member [@mbland](https://github.com/mbland) 
+- This guide was heavily written by BATS-core member [@mbland](https://github.com/mbland)
 for [go-script-bash](https://github.com/mbland/go-script-bash), tweaked for [BATS-core][repohome]
 - Table of Contents created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc)
 - The [official bash logo](https://github.com/odb/official-bash-logo) is copyrighted
